@@ -28,6 +28,7 @@ $blue: #69ABE9
     height: 30px
     width: 30px
 .button
+    position: relative
     z-index: 10
     border: none
     padding: 5px
@@ -37,14 +38,24 @@ $blue: #69ABE9
     background-color: $main_red
     font-size: 21px
     color: $main_white
+    transition: .5s all ease
+
+        // color: $main_red
     &_right-down
         position: fixed
         bottom: 60px
         right: 100px
+        &:hover
+            background-color: black
+            color: $main_white
 a
+    position: relative
     text-decoration: underline
     font-weight: bold
     color: $main_red
+    transition: .5s all ease
+    &:hover
+        color: $second_red
 
 body
     font-family: "Poppins", sans-serif
@@ -60,6 +71,9 @@ body
 .white
     color: $main_white
     font-weight: bold
+    &_width-full
+        &:hover
+            color: $main_white
 
 .container
     display: block
@@ -226,4 +240,3 @@ body
         font-size: 18px
 .mgt
     margin-top: 30px
-
