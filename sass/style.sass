@@ -1,22 +1,20 @@
+@use 'media.sass'
+@use 'variables.sass'
+
 *
     box-sizing: border-box
     margin: 0
     padding: 0
     text-decoration: none
 html
+    font-size: 18px
     scroll-behavior: smooth
-$main_red: #E63636
-$second_red: #b7332d
-$third_red: #9a3733
-$main_white: #F8EDED
-$grey: #ada7a7
-$blue: #69ABE9
 
 .no-underline
     text-decoration: none
 .divider
     width: 60%
-    background-color: $grey
+    background-color: variables.$main_grey
     height: 2px
     &_mgb
         margin-bottom: 30px
@@ -30,21 +28,21 @@ $blue: #69ABE9
     margin: 0 auto
 .white
     text-decoration: none
-    color: $main_white
+    color: variables.$main_white
 .caret-down
     height: 30px
     width: 30px
 .button
     position: relative
-    z-index: 10
+    z-index: 100
     border: none
     padding: 5px
     border-radius: 15px
     width: 180px
     height: 50px
-    background-color: $main_red
-    font-size: 21px
-    color: $main_white
+    background-color: variables.$main_red
+    font-size: 1.167rem
+    color: variables.$main_white
     transition: .5s all ease
 
         // color: $main_red
@@ -54,34 +52,35 @@ $blue: #69ABE9
         right: 100px
         &:hover
             background-color: black
-            color: $main_white
+            color: variables.$main_white
 a
     position: relative
     text-decoration: underline
     font-weight: bold
-    color: $main_red
+    color: variables.$main_red
     transition: .5s all ease
     &:hover
-        color: $second_red
+        color: variables.$second_red
 
 body
+
     font-family: "Poppins", sans-serif
 
 .red
-    color: $main_red
+    color: variables.$main_red
     font-weight: bold
     &_big
-        font-size: 28px
+        font-size: 1.556rem
     &_medium
-        font-size: 24px
+        font-size: 1.333rem
 
 .white
-    color: $main_white
+    color: variables.$main_white
     font-weight: bold
     transition: .5s all ease
     &_width-full
         &:hover
-            color: $main_white
+            color: variables.$main_white
     &_header
         &::after
             content: ''
@@ -91,60 +90,93 @@ body
             height: 2px
             bottom: 0
             left: 0
-            background-color: $main_white
+            background-color: variables.$main_white
             transform-origin: bottom right
             transition: transform 0.25s ease-out
         &:hover
-            color: $main_white
+            color: variables.$main_white
             &::after
                 transform: scaleX(1)
                 transform-origin: bottom left
 
 .container
+    padding: 0 20px
     display: block
     width: 1600px
     margin: 0 auto
 .container2
+    padding: 0 10px
     display: block
     width: 1200px
     margin: 0 auto
     height: 100%
 
 .header
+    position: relative
+    transition: .5s all ease
     width: 100%
     height: 50px
-    background-color: $second_red
+    background-color: variables.$second_red
+    &.active-header
+        height: 500px
+        padding: 40px 0
     &__wrapper
+        transition: .5s all ease
         display: flex
         flex-direction: row
         justify-content: space-between
         align-items: center
         width: 100%
         height: 100%
+        &.active-header-wrapper
+            display: flex
+            flex-direction: column
+            font-size: 1.333rem
     &__li
+        text-align: center
         text-decoration: none
         list-style-type: none
+.burger
+    transition: .5s all ease
+    cursor: pointer
+    display: none
+    position: absolute
+    right: 30px
+    top: 25px
+    transform: translateY(-50%)
+    &__line
+        transition: .5s all ease
+        background-color: variables.$main_white
+        width: 45px
+        height: 4px
+
+.active1
+    transform: rotate(-45deg) translateY(12px)
+.active2
+    opacity: 0
+.active3
+    transform: rotate(45deg) translateY(-12px)
 
 .main
     position: relative
-    padding: 30px 0
+    padding: 30px 0 100px 0
     width: 100%
     min-height: 100vh
 
     &__header
         padding: 0 15px 0 50px
-        color: $main_white
+        color: variables.$main_white
         display: inline-block
-        font-size: 48px
+        font-size: 2.667rem
         font-weight: bold
         border-radius: 0 15px 15px 0
-        background-color: $main_red
+        background-color: variables.$main_red
     &__header2
         display: inline-block
         padding: 8px
         margin-top: 50px
-        font-size: 36px
-        color: $second_red
+        font-size: 2rem
+        color: variables.$second_red
         border-radius: 20px
 
     &__wrapper
@@ -154,18 +186,19 @@ body
         align-content: center
     &__text
         align-content: center
-        font-size: 18px
+        font-size: 1rem
         &_60
             width: 60%
             margin-right: 100px
         &_down
-            font-size: 18px
+            font-size: 1rem
             width: 100%
             text-align: center
     &__img
         height: 350px
+        object-fit: contain
     &__bold
-        font-size: 28px
+        font-size: 1.556rem
         // font-weight: bold
     &__down-wrapper
         position: absolute
@@ -191,7 +224,7 @@ body
     // background: linear-gradient(315deg, $second_red 0%, $blue 100%)
     // background: $third_red url("../icons/pngwing.com.png") repeat right top
     // background-size: 150px 150px
-    background-color: $third_red
+    background-color: variables.$third_red
     // background: url("../icons/pngwing.com.png") 
     padding: 30px 0
     width: 100%
@@ -199,15 +232,15 @@ body
     &__header
 
         padding: 0 15px 0 50px
-        color: $main_red
+        color: variables.$main_red
         display: inline-block
-        font-size: 48px
+        font-size: 2.667rem
         font-weight: bold
         border-radius: 0 15px 15px 0
-        background-color: $main_white
+        background-color: variables.$main_white
     &__wrapper
         margin-top: 50px
-        margin-bottom: 20px
+        margin-bottom: 70px
         width: 100%
         display: flex
         justify-content: space-evenly
@@ -223,17 +256,17 @@ body
         margin: 0 auto 30px
         display: block
         padding: 3px 20px
-        font-size: 36px
-        background-color: $main_white
+        font-size: 2rem
+        background-color: variables.$main_white
         border-radius: 5px
-        color: $main_red
+        color: variables.$main_red
         &_black
-            background-color: $main_white
+            background-color: variables.$main_white
             color: black
 
     &__text
-        font-size: 21px
-        color: $second_red
+        font-size: 1.167rem
+        color: variables.$second_red
         font-weight: bold
         margin-bottom: 10px
         &_black
@@ -243,13 +276,13 @@ body
         padding: 30px
         width: 685px
         height: 580px
-        background-color: $main_white
+        background-color: variables.$main_white
         border-radius: 5px
         box-shadow: -5px 7px 12px 3px #11111134
         ul
             padding-left: 40px
             li
-                font-size: 18px
+                font-size: 1rem
                 line-height: 1.8
     &__card-pic
         position: absolute
@@ -269,12 +302,12 @@ body
         align-items: center
     &__header
         padding: 0 15px 0 50px
-        color: $main_white
+        color: variables.$main_white
         display: inline-block
-        font-size: 48px
+        font-size: 2.667rem
         font-weight: bold
         border-radius: 0 15px 15px 0
-        background-color: $main_red
+        background-color: variables.$main_red
     &__pic
         cursor: pointer
         transition: .5s all ease
@@ -284,7 +317,7 @@ body
     &__text
         width: 600px
         // width: 45%
-        font-size: 18px
+        font-size: 1rem
 .mgt
     margin-top: 30px
 
@@ -293,12 +326,14 @@ body
     height: 100px
     background-color: black
 
-.picture_clicked
-    padding: 30%
-    width: 100%
-    position: fixed
-    top: 50%
-    left: 50%
-    transform: translateX(-50%) translateY(-50%)
-    backdrop-filter: blur(10px)
-    box-shadow: 1px 1px 1px 1px
+img
+    &.example__pic
+        &.picture_clicked
+            padding: 30%
+            width: 100%
+            position: fixed
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            backdrop-filter: blur(10px)
+            box-shadow: 1px 1px 1px 1px
