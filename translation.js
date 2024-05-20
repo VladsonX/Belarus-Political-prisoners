@@ -168,5 +168,5 @@ langButtons.en.addEventListener('click', () => setLanguage('en'));
 langButtons.pl.addEventListener('click', () => setLanguage('pl'));
 
 // Set default language
-setLanguage('en');
+setLanguage('pl');
 
