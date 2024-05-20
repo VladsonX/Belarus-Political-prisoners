@@ -5,6 +5,8 @@ examplePic.addEventListener("click", function () {
 
 })
 
+
+
 let burger = document.querySelector("#burger");
 let header = document.querySelector("#header");
 let headerWrapper = document.querySelector(".header__wrapper");

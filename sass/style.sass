@@ -69,6 +69,24 @@ body
 .red
     color: variables.$main_red
     font-weight: bold
+    &_header
+        text-decoration: none
+        &::after
+                content: ''
+                position: absolute
+                width: 100%
+                transform: scaleX(0)
+                height: 2px
+                bottom: 0
+                left: 0
+                background-color: variables.$main_red
+                transform-origin: bottom right
+                transition: transform 0.25s ease-out
+        &:hover
+            color: variables.$main_red
+            &::after
+                transform: scaleX(1)
+                transform-origin: bottom left
     &_big
         font-size: 1.556rem
     &_medium
@@ -76,6 +94,26 @@ body
     &_second
         color: variables.$second_red
 
+.grey
+    text-decoration: none
+    color: variables.$main_grey
+    font-weight: normal
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        transform: scaleX(0)
+        height: 2px
+        bottom: 0
+        left: 0
+        background-color: variables.$main_grey
+        transform-origin: bottom right
+        transition: transform 0.25s ease-out
+    &:hover
+        color: variables.$main_grey
+        &::after
+            transform: scaleX(1)
+            transform-origin: bottom left
 .white
     text-decoration: none
     color: variables.$main_white
@@ -140,6 +178,11 @@ body
         text-align: center
         text-decoration: none
         list-style-type: none
+        &_lang
+            background-color: variables.$main_white
+            padding: 3px 10px
+            border-radius: 5px
+
 .burger
     transition: .5s all ease
     cursor: pointer

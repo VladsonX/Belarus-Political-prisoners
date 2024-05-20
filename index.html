@@ -24,30 +24,39 @@
         </div>
         <ul class="header__wrapper">
           <li class="header__li">
-            <a href="#main" class="white white_header">Purpose of the event</a>
+            <a id="main-link__purpose" href="#main" class="white white_header">Purpose of the event</a>
           </li>
           <li class="header__li">
-            <a href="#main__header2" class="white white_header"
+            <a id="mainlink__whatCanIDo" href="#main__header2" class="white white_header"
               >What can I do?</a
             >
           </li>
           <li class="header__li">
-            <a href="#write-about" class="white white_header"
+            <a id="main-link__write-about" href="#write-about" class="white white_header"
               >What to write about?</a
             >
           </li>
           <li class="header__li">
-            <a href="#example" class="white white_header"
+            <a id="main-link__example" href="#example" class="white white_header"
               >Example of a letter</a
             >
           </li>
           <li class="header__li">
-            <a
+            <a id="main-link__learn"
               target="_blank"
               href="https://www.gazetaprawna.pl/wiadomosci/swiat/artykuly/9373335,wiezniowe-polityczni-na-bialorusi-sa-traktowani-gorzej-niz-przestepcy.html"
               class="white white_header"
               >Learn more</a
             >
+          </li>
+          <li class="header__li header__li_lang">
+            <a id="langEng" href="#" class="red red_header" >
+              EN
+            </a>
+            <span> | </span>
+            <a id="langPl" href="#" class="grey" >
+              PL
+            </a>
           </li>
           <!-- <li class="header__li"><a href="#" class="white white_header">Partners</a></li> -->
         </ul>
@@ -55,20 +64,20 @@
     </header>
     <main id="main" class="main">
       <button class="button button_right-down">
-        <a
+        <a id="write-a-letter"
           class="white white_width-full"
           target="_blank"
           href="https://docs.google.com/forms/d/e/1FAIpQLSfhsgpGwDc9sskZ82LN_eKwwZBAX9U5kLARAFo2eR1UGw8Usg/viewform?pli=1"
           >Write a letter!</a
         >
       </button>
-      <h1 class="main__header">
+      <h1 id="section1__h1" class="main__header">
         How to write a letter to a political prisoner?
       </h1>
       <div class="container media_container">
-        <h2 class="main__header2">What is the purpose of this event?</h2>
+        <h2 id="section1__purpose" class="main__header2">What is the purpose of this event?</h2>
         <div class="divider divider_mgb"></div>
-        <p class="main__text main__text_60">
+        <p id="section1__description" class="main__text main__text_60">
           Today, on May 21st, we stand in solidarity with Belarusian political
           prisoners. We, Belarusian students studying in Lublin, have found
           refuge far from our homeland. For many of us, this escape was prompted
@@ -76,7 +85,7 @@
           plight of numerous political prisoners in Belarus. <br />
 
           You can learn more at the
-          <a
+          <a id="section1__description_link"
             target="_blank"
             href="https://www.gazetaprawna.pl/wiadomosci/swiat/artykuly/9373335,wiezniowe-polityczni-na-bialorusi-sa-traktowani-gorzej-niz-przestepcy.html"
             class="red"
@@ -87,14 +96,14 @@
         <h2 id="main__header2" class="main__header2">What can I do?</h2>
         <div class="divider"></div>
         <div class="main__wrapper">
-          <p class="main__text main__text_60">
+          <p id="section1__main__wrapper" class="main__text main__text_60">
             Currently in Belarus, there are over
             <span class="red red_big">1385</span> political prisoners,
             completely isolated from the outside world. These are people serving
             their sentences for fabricated criminal cases against them, and they
             are in need of our support. And there's a safe and simple way to
             support these individuals -
-            <a
+            <a id="section1__send-a-letter"
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfhsgpGwDc9sskZ82LN_eKwwZBAX9U5kLARAFo2eR1UGw8Usg/viewform?pli=1"
               >send them a letter!</a
@@ -102,7 +111,7 @@
           </p>
           <img src="img/ref3.png" alt="prison" class="main__img" />
         </div>
-        <p class="main__text">
+        <p id="section1__you-can-write-a-letter" class="main__text">
           You can write a letter
           <a
             target="_blank"
@@ -119,21 +128,21 @@
       />
       <div class="main__down-wrapper">
         <p class="main__text main__text_down red">
-          <a class="no-underline" href="#write-about">What to write about?</a>
+          <a id="section1__write-about" class="no-underline" href="#write-about">What to write about?</a>
         </p>
         <img class="caret-down" src="icons/caret-down.png" alt="caret-down" />
       </div>
     </main>
     <section id="write-about" class="write-about">
       <!-- <img class="papers" src="icons/ref2.png" alt="papers"> -->
-      <h2 class="write-about__header">What to write about?</h2>
+      <h2 id="section2__write-about" class="write-about__header">What to write about?</h2>
       <div class="container media_container">
         <div class="write-about__wrapper">
           <div class="write-about__element">
-            <div class="write-about__header2">You CAN write</div>
+            <div id="section2__can" class="write-about__header2">You CAN write</div>
 
             <div class="write-about__card">
-              <p class="write-about__text">
+              <p id="section2__can_descr" class="write-about__text">
                 You can write about any abstract topics! If nothing comes to
                 mind immediately, you can write about the following:
               </p>
@@ -150,18 +159,18 @@
                 <li>Riddles and puzzles, jokes and anecdotes.🧩</li>
                 <li>Tell about your dreams and ideas.💡</li>
                 <li>Any words of support and hope ❤</li> -->
-                <li>How your day went?</li>
-                <li>Places you've visited, your hometown, favorite spots</li>
-                <li>What good happened?</li>
-                <li>Nature, weather</li>
-                <li>Your favorite hobbies</li>
-                <li>Songs, movies, theater WITHOUT political context</li>
-                <li>Draw something!</li>
-                <li>Sports activities, meditation</li>
-                <li>Psychological practices for self-help</li>
-                <li>Riddles and puzzles, jokes and anecdotes</li>
-                <li>Tell about your dreams and ideas</li>
-                <li class="red">Any words of support and hope</li>
+                <li id="can__1">How your day went?</li>
+                <li id="can__2">Places you've visited, your hometown, favorite spots</li>
+                <li id="can__3">What good happened?</li>
+                <li id="can__4">Nature, weather</li>
+                <li id="can__5">Your favorite hobbies</li>
+                <li id="can__6">Songs, movies, theater WITHOUT political context</li>
+                <li id="can__7">Draw something!</li>
+                <li id="can__8">Sports activities, meditation</li>
+                <li id="can__9">Psychological practices for self-help</li>
+                <li id="can__10">Riddles and puzzles, jokes and anecdotes</li>
+                <li id="can__11">Tell about your dreams and ideas</li>
+                <li id="can__12" class="red">Any words of support and hope</li>
               </ul>
               <img
                 src="icons/pencil.png"
@@ -171,12 +180,12 @@
             </div>
           </div>
           <div class="write-about__element">
-            <h2 class="write-about__header2 write-about__header2_black">
+            <h2 id="section2__cannot" class="write-about__header2 write-about__header2_black">
               You CANNOT write
             </h2>
 
             <div class="write-about__card">
-              <p class="write-about__text write-about__text_black">
+              <p id="section2__cannot_descr" class="write-about__text write-about__text_black">
                 Your letter cannot contain anything from the list below:
               </p>
               <ul>
@@ -190,15 +199,15 @@
                 <li>Emojis, stickers🚫</li>
                 <li>Leaving blank sheets of paper🚫</li> -->
 
-                <li>Personal information (about yourself and family)</li>
-                <li>Political topics, slogans</li>
-                <li>Abbreviations and foreign words</li>
-                <li>Insults and profanity</li>
-                <li>Extremist organizations</li>
-                <li>Metaphors and allegories</li>
-                <li>Criminal cases</li>
-                <li>Emojis, stickers</li>
-                <li>Leaving blank sheets of paper</li>
+                <li id="cannot__1">Personal information (about yourself and family)</li>
+                <li id="cannot__2">Political topics, slogans</li>
+                <li id="cannot__3">Abbreviations and foreign words</li>
+                <li id="cannot__4">Insults and profanity</li>
+                <li id="cannot__5">Extremist organizations</li>
+                <li id="cannot__6">Metaphors and allegories</li>
+                <li id="cannot__7">Criminal cases</li>
+                <li id="cannot__8">Emojis, stickers</li>
+                <li id="cannot__9">Leaving blank sheets of paper</li>
               </ul>
               <img
                 src="icons/eraser.png"
@@ -210,17 +219,17 @@
         </div>
         <div class="main__down-wrapper">
           <p class="main__text main__text_down white">
-            <a class="white" href="#example">Example of a letter</a>
+            <a id="section2__example" class="white" href="#example">Example of a letter</a>
           </p>
           <img class="caret-down" src="icons/down-arrow.png" alt="caret-down" />
         </div>
       </div>
     </section>
     <section id="example" class="example">
-      <h2 class="example__header">Example of a letter</h2>
+      <h2 id="section3__example" class="example__header">Example of a letter</h2>
 
       <div class="container media_container">
-        <h2 class="main__header2">If you write a handwritten letter</h2>
+        <h2 id="section2__handwritten" class="main__header2">If you write a handwritten letter</h2>
         <div class="divider"></div>
         <div class="example__wrapper">
           <img
@@ -228,8 +237,8 @@
             src="img/letter-example2.png"
             alt="Example of a letter"
           />
-          <p class="example__text">
-            <span class="red red_medium"
+          <p id="handwritten__text" class="example__text">
+            <span id="handwritten__text_description" class="red red_medium"
               >If you want to write a handwritten letter, you should write in
               Russian or Belarusian!</span
             >
@@ -238,18 +247,18 @@
             assistance.
             <br />
             <br />
-            <span class="red">Take a postcard </span>if you are not expecting a
+            <span id="handwritten__text_postcard" class="red">Take a postcard </span>if you are not expecting a
             response. <br />
-            <span class="red">Take a reply card</span> if you are expecting a
+            <span id="handwritten__text_reply" class="red">Take a reply card</span> if you are expecting a
             response and have a return Belarusian address. If you want to
             receive a response but do not have a Belarusian address, leave your
             name, surname, and email separately on the paper so that we can
             identify the response and send it to you.
           </p>
         </div>
-        <h2 class="main__header2">If you write a letter online</h2>
+        <h2 id="section3__online" class="main__header2">If you write a letter online</h2>
         <div class="divider"></div>
-        <p class="main__text main__text_60 mgt">
+        <p id="online__description" class="main__text main__text_60 mgt">
           If you want to write a letter online, you can do it in any convenient
           language using the
           <a
@@ -268,22 +277,22 @@
             <a href="#main" class="white white_header">Purpose of the event</a>
           </li>
           <li class="header__li">
-            <a href="#main__header2" class="white white_header"
+            <a id="footer__what-can-i-do" href="#main__header2" class="white white_header"
               >What can I do?</a
             >
           </li>
           <li class="header__li">
-            <a href="#write-about" class="white white_header"
+            <a id="footer__about" href="#write-about" class="white white_header"
               >What to write about?</a
             >
           </li>
           <li class="header__li">
-            <a href="#example" class="white white_header"
+            <a id="footer__example" href="#example" class="white white_header"
               >Example of a letter</a
             >
           </li>
           <li class="header__li">
-            <a
+            <a id="footer__learn"
               target="_blank"
               href="https://www.gazetaprawna.pl/wiadomosci/swiat/artykuly/9373335,wiezniowe-polityczni-na-bialorusi-sa-traktowani-gorzej-niz-przestepcy.html"
               class="white white_header"
@@ -296,20 +305,52 @@
         </ul>
         <div class="footer-partners__wrapper">
           <div class="divider divider_footer"></div>
-          <p class="footer__partners red red_second">Partners</p>
+          <p id="footer__partners" class="footer__partners red red_second">Partners</p>
           <div class="divider divider_footer"></div>
         </div>
         <div class="partners">
-          <a target="_blank" href="https://www.instagram.com/majsternia_ps/" class="partners__img_link"><img class="partners__img" src="img/SPA_LOGO_ENGL.png" alt="Solidarity Postcards Atelier"/></a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/majsternia_ps/"
+            class="partners__img_link"
+            ><img
+              class="partners__img"
+              src="img/SPA_LOGO_ENGL.png"
+              alt="Solidarity Postcards Atelier"
+          /></a>
 
-          <a target="_blank" href="https://www.facebook.com/zuss.umcs/?locale=pl_PL" class="partners__img_link"><img class="partners__img" src="img/033928-zuss-umcs-logo-czarne-.png" alt="Zarzad Uczelniany Samorządu Studentow umcs"/></a>
-          <a target="_blank" href="https://www.facebook.com/RWSSWPiD" class="partners__img_link"><img class="partners__img" src="img/SS_WPiD_logo_png.png" alt="Samorząd Studentów Wydziału Politologii i Dziennikarstwa"/></a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/zuss.umcs/?locale=pl_PL"
+            class="partners__img_link"
+            ><img
+              class="partners__img"
+              src="img/033928-zuss-umcs-logo-czarne-.png"
+              alt="Zarzad Uczelniany Samorządu Studentow umcs"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/RWSSWPiD"
+            class="partners__img_link"
+            ><img
+              class="partners__img"
+              src="img/SS_WPiD_logo_png.png"
+              alt="Samorząd Studentów Wydziału Politologii i Dziennikarstwa"
+          /></a>
 
-          <a target="_blank" href="https://pl-pl.facebook.com/samorzadPIP/" class="partners__img_link"><img class="partners__img" src="img/rwss_pip_logo_skrot.png" alt="Rada Wydziałowa Samorządu Studentów Pedagogiki i Psychologii - UMCS "/></a>
-
+          <a
+            target="_blank"
+            href="https://pl-pl.facebook.com/samorzadPIP/"
+            class="partners__img_link"
+            ><img
+              class="partners__img"
+              src="img/rwss_pip_logo_skrot.png"
+              alt="Rada Wydziałowa Samorządu Studentów Pedagogiki i Psychologii - UMCS "
+          /></a>
         </div>
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="translation.js"></script>
   </body>
 </html>
